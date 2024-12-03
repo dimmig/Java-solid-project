@@ -24,4 +24,8 @@ public abstract class Player {
             throw new IllegalArgumentException("Player name does not implement needed requirements");
         }
     }
+
+    public String toString() {
+        return "[" + getClass().getSimpleName() + "]" + " " + name;
+    }
 }
